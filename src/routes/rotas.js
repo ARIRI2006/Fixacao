@@ -5,16 +5,16 @@ const router = Router();
 // Importar funções do controller para a rota acessar as funções
 const { 
     listarDados,
-    cadastrarDados,
-    editarDados,
+    gravarDados,
+    atualizarDados,
     deletarDados
  } = require('../controllers/crudController');
 
 router.get('/listar', listarDados);
 
-router.post('/cadastrar', cadastrarDados);
+router.post('/gravar', gravarDados);
 
-router.put('/atualizar', editarDados);
+router.put('/atualizar', atualizarDados);
 
 router.delete('/deletar', deletarDados);
 
